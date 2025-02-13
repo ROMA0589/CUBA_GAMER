@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-lang="title">24/7 C̷U̷B̴A̵_̸G̷A̷M̷E̸R̸</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/styles.css" rel="stylesheet"> <!-- Include external CSS file -->
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon"> <!-- Favicon -->
+    <style>
+        body {
+            background: url('https://i.pinimg.com/736x/f3/8f/d5/f38fd5addb0c20753e3d02fd5fe05e8f.jpg') no-repeat center center fixed; /* Agregar la imagen de fondo */
+            background-size: 50%; /* Hacer la imagen de fondo un poco más pequeña */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            box-shadow: inset 0 0 10px black; /* Añadir sombra negra a los lados */
+        }
+        .header {
+            background: url('https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMnUya2Z4Z2dxa3lnbWYxZml2ZXI5ajIwdmt6d2Zhenp6dTNxbGk3MyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Ld5XlMDPFEntFOHOVT/giphy.gif') no-repeat center center;
+            background-size: cover;
+            color: rgb(255, 58, 58);
+            padding: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Añadir sombra a los bordes de la imagen */
+        }
+        .content {
+            margin: auto; /* Centrar el contenido horizontal y verticalmente */
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+            border-radius: 10px; /* Bordes redondeados */
+            width: 500px; /* Ancho del contenido */
+            height: 500px; /* Altura del contenido */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Añadir sombra a los bordes del contenido */
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header text-center">
+        <h1 id="welcome" data-lang="welcome">Bienvenido a 24/7 C̷U̷B̴A̵_̸G̷A̷M̷E̸R̸</h1>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="servicios.html" id="services" data-lang="services">Servicios</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Idioma
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#" onclick="changeLanguage('es')">Español</a>
+                        <a class="dropdown-item" href="#" onclick="changeLanguage('en')">Inglés</a>
+                        <a class="dropdown-item" href="#" onclick="changeLanguage('pt')">Portugués</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="content">
+        <h2 id="aboutUs" data-lang="aboutTitle">Sobre Nosotros</h2>
+        <p id="aboutUsText" data-lang="aboutText">Bienvenido a 24/7 CUBA_GAMER, nuestro objetivo es unir la comunidad cubana, compartir las experiencias en nuestros juegos favoritos,
+            crear un espacio donde todos puedan disfrutar, aprender y competir en un ambiente amigable. Nos apasiona el juego y creemos en el poder de los videojuegos para conectar a las personas. Únete a nosotros y sé parte de esta increíble comunidad. </p>
+ 
+            <ul>
+            <li id="teamSpeakDiscord" data-lang="teamSpeakDiscord"><strong>TeamSpeak-Discord:</strong> Aquí puedes comunicarte con tus amigos, crear tu canal personal y compartir experiencias.</li>
+            <li id="guides" data-lang="guides"><strong>Guías:</strong> Encuentra guías y trucos para mejorar tu experiencia de juego.</li>
+        </ul>
+
+        <h2 id="contact" data-lang="contactTitle">Contacto</h2>
+        <p id="contactText" data-lang="contactText">Si tienes alguna pregunta o sugerencia, no dudes en ponerte en contacto con nosotros:</p>
+        <span class="highlighted-name">ЯOMA0589</span> <br>
+        <span class="highlighted-name">₳ɵ৳sʋki</span> <br>
+        <span class="highlighted-name">hq61</span> <br>
+        <span class="highlighted-name">Chichimokers</span> <br>
+        <span class="highlighted-name">LODAS</span> <br>
+        <span class="highlighted-name"> ₮₩Ɖ_SUICIDA</span>
+    </div>
+
+    <footer class="footer">
+        <p data-lang="footerText">&copy; 2023-2025. 24/7 C̷U̷B̴A̵_̸G̷A̷M̷E̸R̸ . All rights reserved.</p>
+    </footer>
+    <button class="icon-button icon-button-left" onclick="window.location.href='https://discord.gg/mt7UuUcUpP'">
+        <img src="https://img.icons8.com/?size=64&id=61604&format=png" alt="Left Icon">
+    </button>
+    <button class="icon-button icon-button-right" onclick="window.location.href='ts3server://cubagamer.tsbr.top'">
+        <img src="https://img.icons8.com/?size=64&id=63119&format=png" alt="Right Icon">
+    </button>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> <!-- Include jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="assets/js/scripts.js"></script> <!-- Include external JS file -->
+    <script src="assets/js/language.js"></script> <!-- Include language JS file -->
+</body>
+</html>

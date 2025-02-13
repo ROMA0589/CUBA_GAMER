@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-lang="title">24/7 C̷U̷B̴A̵_̸G̷A̵M̷E̸R̸</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!-- Include Google Font -->
+    <link href="assets/css/styles.css" rel="stylesheet"> <!-- Include external CSS file -->
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon"> <!-- Favicon -->
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background: url('https://i.pinimg.com/originals/99/5b/29/995b2937b723696d3a577b7ddc029568.gif') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Roboto', sans-serif; /* Apply Google Font */
+        }
+        .container {
+            flex: 1;
+        }
+        .footer {
+            background-color: #343a40; /* Cambiar el color de fondo del pie de página */
+            padding: 10px 0;
+            border-radius: 10px; /* Bordes redondeados */
+            margin: 0; /* Ajustar margen alrededor del pie de página */
+        }
+        .card-dynamic {
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin-bottom: 20px; /* Añadir margen inferior para separar las tarjetas */
+            font-size: 1rem; /* Adjust font size */
+        }
+        .card-dynamic:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .card-title {
+            font-weight: 700; /* Apply bold font weight */
+        }
+        .card-text {
+            font-weight: 400; /* Apply regular font weight */
+        }
+        @media (max-width: 768px) {
+            .card-dynamic {
+                margin-bottom: 15px; /* Ajustar margen inferior en pantallas pequeñas */
+            }
+            .footer {
+                margin: 0; /* Ajustar margen alrededor del pie de página en pantallas pequeñas */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Eliminar el encabezado -->
+    <!-- <header class="header text-center">
+        <h1>Servicios de Juegos</h1>
+    </header> -->
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card card-dynamic" onclick="window.location.href='https://battlelog.battlefield.com:443/bf3/es/servers/show/pc/47e9c19b-9944-40be-8eb7-ff46978de4bd/AKA-ASILO-ARKHAM-CLAN-SERVER-https-discord-gg-suq2QAxn/';">
+                    <img src="https://i.pinimg.com/736x/55/6c/82/556c829a6cab0dbdf2b0cf69da993fc6.jpg" class="card-img-top" alt="Battlefield 3">
+                    <div class="card-body">
+                        <h5 class="card-title" data-lang="Battlefield 3">Battlefield 3</h5>
+                        <p class="card-text" data-lang="aboutUsText">Disfruta de la acción intensa y los gráficos impresionantes de Battlefield 3.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card card-dynamic">
+                    <img src="https://i.pinimg.com/236x/c1/c5/e2/c1c5e2a08fa228bd21bc2d0a68fe06f1.jpg" class="card-img-top" alt="Rust">
+                    <div class="card-body">
+                        <h5 class="card-title" data-lang="rust">Rust</h5>
+                        <p class="card-text" data-lang="rustText">Sobrevive en el mundo salvaje de Rust, donde cada decisión cuenta.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card card-dynamic">
+                    <img src="https://i.pinimg.com/736x/8a/e6/d0/8ae6d09db5d5ff5547abea03f101f584.jpg" class="card-img-top" alt="World of Warcraft (WOW)">
+                    <div class="card-body">
+                        <h5 class="card-title" data-lang="wow">World of Warcraft (WOW)</h5>
+                        <p class="card-text" data-lang="wowText">Embárcate en una aventura épica en el mundo de Azeroth con World of Warcraft.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card card-dynamic">
+                    <img src="https://i.pinimg.com/736x/12/ce/28/12ce283352004e45ef4dc4739d24525d.jpg" class="card-img-top" alt="Age of Empires">
+                    <div class="card-body">
+                        <h5 class="card-title" data-lang="ageOfEmpires II">Age of Empires II</h5>
+                        <p class="card-text" data-lang="ageOfEmpiresText">Construye y lidera tu imperio a través de las eras en Age of Empires.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button id="alertButton">Mostrar Alerta</button>
+    <form onsubmit="return validateForm()">
+        <input type="text" id="name" placeholder="Nombre">
+        <input type="email" id="email" placeholder="Correo Electrónico">
+        <button type="submit">Enviar</button>
+    </form>
+
+    <footer class="footer text-center mt-5">
+        <p>&copy; 2023-2025. 24/7 CUBA_GAMER. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> <!-- Include jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="assets/js/language.js"></script> <!-- Include language JS file -->
+    <script>
+        function changeLanguage(language) {
+            const elements = document.querySelectorAll('[data-lang]');
+            elements.forEach(element => {
+                const key = element.getAttribute('data-lang');
+                element.textContent = translations[language][key];
+            });
+        }
+
+        const translations = {
+            'Español': {
+                'title': 'Servicios - 24/7 CUBA_GAMER',
+                'services': 'Servicios',
+                'aboutUsText': 'Disfruta de la acción intensa y los gráficos impresionantes de Battlefield 3.',
+                'rust': 'Rust',
+                'rustText': 'Sobrevive en el mundo salvaje de Rust, donde cada decisión cuenta.',
+                'wow': 'World of Warcraft (WOW)',
+                'wowText': 'Embárcate en una aventura épica en el mundo de Azeroth con World of Warcraft.',
+                'ageOfEmpires': 'Age of Empires',
+                'ageOfEmpiresText': 'Construye y lidera tu imperio a través de las eras en Age of Empires.'
+            },
+            'Inglés': {
+                'title': 'Services - 24/7 CUBA_GAMER',
+                'services': 'Services',
+                'aboutUsText': 'Enjoy the intense action and stunning graphics of Battlefield 3.',
+                'rust': 'Rust',
+                'rustText': 'Survive in the wild world of Rust, where every decision counts.',
+                'wow': 'World of Warcraft (WOW)',
+                'wowText': 'Embark on an epic adventure in the world of Azeroth with World of Warcraft.',
+                'ageOfEmpires': 'Age of Empires',
+                'ageOfEmpiresText': 'Build and lead your empire through the ages in Age of Empires.'
+            },
+            'Portugués': {
+                'title': 'Serviços - 24/7 CUBA_GAMER',
+                'services': 'Serviços',
+                'aboutUsText': 'Desfrute da ação intensa e dos gráficos impressionantes de Battlefield 3.',
+                'rust': 'Rust',
+                'rustText': 'Sobreviva no mundo selvagem de Rust, onde cada decisão conta.',
+                'wow': 'World of Warcraft (WOW)',
+                'wowText': 'Embarque em uma aventura épica no mundo de Azeroth com World of Warcraft.',
+                'ageOfEmpires': 'Age of Empires',
+                'ageOfEmpiresText': 'Construa e lidere seu império através das eras em Age of Empires.'
+            }
+        };
+    </script>
+</body>
+</html>

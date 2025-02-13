@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('assets/images/photo1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    background: #007bff;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: rgb(123, 13, 13); /* Change text color to white */
+    animation: glow 1.5s infinite alternate;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: white;
+    width: 100%;
+    margin-top: auto; /* Ensure footer stays at the bottom */
+    position: relative; /* Change to relative positioning */
+    bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .game-area {
+        flex-direction: column;
+        height: auto;
+    }
+}
+
+.icon-button {
+    position: fixed;
+    top: 200px; /* Lower the buttons a bit more */
+    background-color: #101010;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 0 10px black; /* Add black shadow */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.icon-button:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 20px black; /* Increase shadow on hover */
+}
+
+.icon-button-left {
+    right: 100px; /* Same margin as the navigation bar */
+}
+
+.icon-button-right {
+    right: 20px; /* Same margin as the navigation bar */
+}
+
+.navbar {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow to the navigation bar */
+    background-color: rgba(255, 255, 255, 0.5); /* Make the navigation bar transparent */
+}
+
+.navbar-nav .nav-link {
+    transition: color 0.3s, background-color 0.3s; /* Make the buttons more dynamic */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #fff;
+    background-color: #6c757d; /* Highlight in gray */
+}
+
+.content {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    text-align: left; /* Align content to the left */
+    width: 300px; /* Set a fixed width for the content box */
+    position: relative;
+    left: 20px; /* Position the content box to the left */
+    flex-grow: 1; /* Allow the content to grow and fill the space between the navbar and footer */
+    margin-bottom: 60px; /* Ensure the content reaches the footer */
+}
+
+.highlighted-name {
+    font-size: 1.5em; /* Increase font size */
+    color: #ff4500; /* Change text color */
+}
